@@ -475,6 +475,57 @@ hr.footHr{
     .logo{
       width: 80%;
     }
+
+.work{
+    float: left;
+    width:100%;
+    padding: 10px;
+  
+   
+}
+.workDetails{
+    float: left;
+    width: 100%;
+    padding: 10px;
+   
+    
+}
+.wrk1{
+    float: left;
+    width:100%;
+    padding: 10px;
+  
+   
+}
+.wdk1{
+    float: left;
+    width: 100%;
+    padding: 10px;
+   
+    
+}
+.work div{
+    width:100%;
+    height: 400px;
+    background:rgba(201, 201, 207, 0.219);
+}
+.workDetails div{
+    padding: 10px;
+    width:100%;
+  background: rgba(128, 128, 131, 0.493);
+}
+.wrk1 div{
+    width:100%;
+    padding: 10px;
+    background:rgba(201, 201, 207, 0.219);
+}
+.wdk1 div{
+   
+    width:100%;
+    height: 400px;
+  background: rgba(128, 128, 131, 0.493);
+    
+}
     .navBar{
         width:20%;
         padding: 15px;
@@ -619,14 +670,5 @@ hr.footHr{
         border-radius: 5px;
         
     }
-    .workDetails div{
-        padding: 10px;
-        width:100%;
-      background: rgba(128, 128, 131, 0.493);
-    }
-    .wrk1 div{
-        width:100%;
-        padding: 10px;
-        background:rgba(201, 201, 207, 0.219);
-    }
+   
   }
