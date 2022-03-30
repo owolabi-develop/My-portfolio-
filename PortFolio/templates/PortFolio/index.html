@@ -306,7 +306,7 @@ Here are a few technologies I’ve been working with recently:
                 <div>
                     <h3><span class="p1">10.</span> &nbsp;&nbsp;<span class="Abt">Get in Touch _____________ </span> </h3>
                     <p class="pContact">I am available to work on your projects and bring your ideas to life. I am just a click away.</p>
-                <form method="post">
+                <form method="post" action="{% url 'PortFolio:index' %}">
                 {% csrf_token %}
                     {{forms.non_field_error}}
                    
