@@ -1,0 +1,359 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owolabi Akintan</title>
+    <link rel="shortcut icon" href="{% static 'images/logo.png' %}" type="image/x-icon" style="height: 100px;">
+    <script src="https://kit.fontawesome.com/18de66c05e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'PortFolio/main.css' %}">
+    <script src="{% static 'PortFolio/main.js' %}"></script>
+    
+</head>
+<body onload="scrollNav()">
+    <!-- wrapper div-->
+        
+        <!--top-header-->
+        <div class="myLinks">
+            <i class="fa-brands fa-facebook-square"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <!--START of menu wrapper-->
+       <div class="menuWrapper">
+           <!--MENU-->
+           <div class="mainrow">
+            <div class="col logo">
+                <img src="{% static 'images/logo.png' %}">
+            </div>
+            <div class="col menu">
+                <a href="{% url 'PortFolio:index' %}" class="active"></i>HOME</a>
+                <a href="#service1">&nbsp;&nbsp; <span class="p1">01.</span>SERVICES</a>
+                <a href="#AboutMe1">&nbsp;&nbsp; <span class="p1">02.</span>ABOUT</a>
+                <a href="#projectFrame1">&nbsp;&nbsp; <span class="p1">03.</span>WORK</a>
+                <a href="#forms1">&nbsp;&nbsp; <span class="p1">10.</span>CONTACT</a>  
+            </div>
+
+            <div class="col navBar" onclick="NavBar()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <!--MENU-->
+       </div>
+       <!--end of menu wrapper-->
+       <!--nav dropdown-->
+       <div class="navDropDown">
+             <a href="{% url 'PortFolio:index' %}" class="active"></i>HOME</a>
+                <a href="#service1">&nbsp;&nbsp; <span class="p1">01.</span>SERVICES</a>
+                <a href="#AboutMe1">&nbsp;&nbsp; <span class="p1">02.</span>ABOUT</a>
+                <a href="#projectFrame1">&nbsp;&nbsp; <span class="p1">03.</span>WORK</a>
+                <a href="#forms1">&nbsp;&nbsp; <span class="p1">10.</span>CONTACT</a>
+
+
+       </div>
+       <!--nav dropdown end-->
+        <div id="Top-header">
+            
+            <!--DISPLAY HEADER-->
+            <div class="mainrow">
+                <div class="col textContent">
+                   
+                    <p> <span style="color: darkcyan;">Hello,name is</span></p>
+                    <h1>Akintan Owolabi.</h1>
+                    <h1>I build things for the web.</h1>
+                    <p>I’m a software engineer specializing in building (and occasionally designing)<br> 
+                        exceptional digital experiences. Currently,I’m focused on building accessible, <br>human-centered products at Upstatement.</p>
+                    
+                  
+
+
+                </div>
+                
+                <div class="col sideImage ImageEffect">
+                   
+                 
+                   
+                    
+                </div>
+            </div>
+            <!--END DISPLAY HEADER-->
+
+          
+            
+        </div>
+        <!--end of top-header-->
+
+        <!--profile Card-->
+       
+
+        <!--start contentSection-->
+        <div id="contentWrapper">
+            <div class="mainrow">
+                <h3><span class="p1">01.</span> &nbsp;&nbsp;<span class="Abt">My Service ______________________ </span> </h3>
+                <div class="col UX service">
+                    <i class="fa-solid fa-code"></i>
+                    <p>UX UI responsive WebSite Developement</p>
+                    <p>
+                        I use various web technologies to 
+                        develop attractive websites which 
+                        converts visitors to customers. 
+                        I develop creative and responsive website layouts.
+                    </p>
+                </div>
+                <div class="col database service"> 
+                    <i class="fa-solid fa-database"></i>
+                    <p>Database management Mysql/PostgreSql</p> 
+                    <p>
+                        I work with certain design database tools 
+                        to create high-fidelity designs and 
+                        prototypes. I design accessible and usable products which aid business growth.
+                    </p> 
+                </div>
+               
+                <div class="col service" id="service1"> 
+                    <i class="fa-solid fa-layer-group"></i>
+                    <p>Graphics Design using Adobe photoShop</p>
+                    <p>
+                        I work with certain design tools 
+                        to create high-fidelity designs and 
+                        prototypes. I design accessible and usable products which aid business growth.
+                    </p> 
+                </div>
+            </div>
+            <div class="mainrow">
+                <div class="col AboutMe" id="AboutMe1">
+                    <h3><span class="p1">02.</span> &nbsp;&nbsp;<span class="Abt">About Me _________________ </span> </h3>
+                    <p>
+                        Hello! My name is Owolabi and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!<br/>
+
+Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.
+
+I also recently launched a course that covers everything you need to build a web app with the Spotify API using Django and javscript.
+
+Here are a few technologies I’ve been working with recently:
+                    </p>
+                    <h5>
+                    <i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;Owolabidevelop84@gmail.com |
+                    <i class="fa-solid fa-phone"></i>&nbsp;&nbsp;+2349132094847 |
+                    <i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Lagos Nigeria
+                    </h5>
+                </div>
+                <div class="col mypic">
+                    <div>
+                    <img src="{% static 'images/me.png' %}">
+                </div>
+                </div>
+            </div>
+
+            <div class="mainrow">
+                 <h3><span class="p1">03.</span> &nbsp;&nbsp;<span class="Abt">Skills ______________________ </span> </h3>
+                <div class="RightScroll"><i class="fa-solid fa-circle-right" onclick="RightSlide()"></i></div>
+                <div class="leftScroll"><i class="fa-solid fa-circle-left" onclick="LeftSlide()"></i></div>
+                
+                <div class="col Skills">
+                    <div class="SkilContainer">
+                    <img src="{% static 'images/html-icon.png' %}">
+                    <div class="progressbar">
+                        <div></div>
+                    </div>
+                    </div>
+                    <div class="SkilContainer">
+                        <img src="{% static 'images/css-icon.png' %}">
+                        <div class="progressbar">
+                            <div></div>
+                        </div>
+                        </div>
+
+                        <div class="SkilContainer">
+                            <img src="{% static 'images/python-icon.png' %}">
+                            <div class="progressbar">
+                                <div></div>
+                            </div>
+                            </div>
+
+                            <div class="SkilContainer">
+                                <img src="{% static 'images/javascript-icon.png' %}">
+                                <div class="progressbar">
+                                    <div></div>
+                                </div>
+                                </div>
+
+                                <div class="SkilContainer">
+                                <img src="{% static 'images/sql-icon.png' %}">
+                                <div class="progressbar">
+                                    <div></div>
+                                </div>
+                                </div>
+
+                                <div class="SkilContainer">
+                                    <img src="{% static 'images/django-icon.png' %}">
+                                    <div class="progressbar">
+                                        <div></div>
+                                    </div>
+                                    </div>
+
+                                    <div class="SkilContainer">
+                                        <img src="{% static 'images/git-icon.png' %}">
+                                        <div class="progressbar">
+                                            <div></div>
+                                        </div>
+                                        </div>
+                                        <div class="SkilContainer">
+                                            <img src="{% static 'images/github-icon.png' %}">
+                                            <div class="progressbar">
+                                                <div></div>
+                                            </div>
+                                            </div>
+                                            <div class="SkilContainer">
+                                                <img src="{% static 'images/heroku-icon.png' %}">
+                                                <div class="progressbar">
+                                                    <div></div>
+                                                </div>
+                                                </div>
+                </div>
+                    
+                
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <!--End of skillcontainer-->
+            <!--my work container-->
+            <div class="mainrow">
+                
+                <div class="col wrk1">
+                    <div>
+                        <p>title</p>
+                        <span>python-icon| Django | Api</span>
+                    </div>
+                     
+                </div>
+                <div class="col wdk1">
+                    <div>
+                       <h1>image</h1>
+                    </div>
+                   
+                </div>
+            </div>
+            <hr class="ProHr">
+            <!--project 2-->
+            <div class="mainrow projectFrame">
+                
+                <div class="col work">
+                    <div>
+                        <h1>image</h1>
+                    </div>
+                     
+                </div>
+                <div class="col workDetails">
+                    <div>
+                        <p>Title</p>
+                    <span>python-icon| Django | Api</span>
+                    </div>
+                   
+                </div>
+            </div>
+            <hr class="ProHr">
+            <!--porject 2-->
+            <div class="mainrow">
+                
+                <div class="col wrk1">
+                    <div>
+                        <p>title</p>
+                        <span>python-icon| Django | Api</span>
+                    </div>
+                     
+                </div>
+                <div class="col wdk1">
+                    <div>
+                       <h1>image</h1>
+                    </div>
+                   
+                </div>
+            </div>
+            
+            <hr class="ProHr">
+            <!--project 3-->
+            <div class="mainrow projectFrame">
+                
+                <div class="col work">
+                    <div>
+                        <h1>image</h1>
+                    </div>
+                     
+                </div>
+                <div class="col workDetails">
+                    <div>
+                        <p>Title</p>
+                    <span>python-icon| Django | Api</span>
+                    </div>
+                   
+                </div>
+            </div>
+
+            
+            <hr class="ProHr">
+        <div class="mainrow">
+            <div class="col forms" id="forms1">
+               
+                <div>
+                    <h3><span class="p1">10.</span> &nbsp;&nbsp;<span class="Abt">Get in Touch _____________ </span> </h3>
+                    <p class="pContact">I am available to work on your projects and bring your ideas to life. I am just a click away.</p>
+                <form method="post">
+                {% csrf_token %}
+                    {{forms.non_field_error}}
+                   
+                    <table>
+                        <tr>
+                           
+                            
+                             <td>{{forms.FirstName}}</td>
+                             <td>{{forms.LastName}}</td>
+                        </tr>
+                        <tr>
+                             <td>{{forms.Subject}}</td>
+                            <td>{{forms.Sender}}</td>
+                        </tr>
+                    </table>
+                    {{forms.Message}}
+                    <br>
+                    
+                   
+                    <input type="Submit" value="Send Mail">
+                </form>
+            </div>
+            </div>
+
+        </div>
+      
+
+
+        </div>
+        <!--end contentSection-->
+
+    <!--footer-->
+<div id="footerHolder">
+          
+        
+    <hr class="footHr">
+    <div class="mainrow">
+
+    <h5 align="center"><i class="fa-solid fa-copyright"></i>Copy Right 2022 DevelopWithOwolabi.com | <i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;Owolabidevelop84@gmail.com</h5>
+    </div>
+    <hr class="footHr">
+    <br>
+    <br>
+</div>
+<!--end footer-->
+
+    <!-- end wrapper div-->
+    
+</body>
+</html>
