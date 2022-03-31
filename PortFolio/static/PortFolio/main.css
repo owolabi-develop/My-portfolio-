@@ -149,15 +149,18 @@ a.active{
     margin:30px;
     background: linear-gradient(rgb(7, 45, 77),rgb(3, 35, 49));
     border-radius: 10px;  
-    animation-name: up;
-    animation-duration: 1.3s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
+   
    
     
 }
+.scrollEffect{
+    animation-name: up;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
 @keyframes up{
-    0%{transform: translate(0px,50px);}
+    0%{transform: translate(0px,60px);}
     100%{transform: translate(0px,0px);
     transition: transform 1s;}
 }
