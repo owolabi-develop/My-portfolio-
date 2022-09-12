@@ -324,7 +324,20 @@ hr.ProHr{
     
 }
 
+.four_wrapper{
+    padding: 10px ;
+    width:80%;
+    margin:auto;
+    text-align: center;
+   
 
+}
+.four_wrapper img{
+    height: 400px;
+    width:50%;
+
+
+}
 
 
 .Contact{
