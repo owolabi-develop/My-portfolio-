@@ -5,9 +5,7 @@
 body{
     margin:0px;
     padding: 0px;
-    background: linear-gradient(rgb(7, 45, 77),rgb(6, 43, 59));
-   
-   
+    background: linear-gradient(rgb(7, 45, 77),rgb(6, 43, 59));  
     
 }
 .myLinks{
@@ -119,11 +117,7 @@ a.active{
 
 
 #Top-header{
-    width:100%;
-   
-    
- 
-    
+    width:100%;    
 }
 
 
@@ -136,10 +130,6 @@ a.active{
     margin: auto;
     color:rgb(151, 150, 150);
     width:80%;
-  
-   
-   
-  
 }
 .service{
     text-transform: capitalize;
@@ -175,121 +165,107 @@ a.active{
     color:rgb(151, 150, 150);
     
 }
-
-
-.Skills{
-   border-radius: 10px;
-    white-space: nowrap;
-    overflow: hidden;   
-    width:85%;
-    box-shadow: 5px 4px 5px rgb(4, 107, 107); ;
-    transition: overflow linear 1s ;
-    scroll-behavior: smooth;
+.containerSkill{
+    width: 100%;
+    font-family: "Poppins",sans-serif;
+    color:rgb(151, 150, 150);
+    font-weight: 500;
 }
 
-.SkilContainer{
-    display: inline-block;
-    text-align: center;
-    margin: 10px;
-    width:200px;
-    padding:10px;
-    border-radius: 5px;
-
-    background: linear-gradient(rgb(5, 38, 65),rgb(3, 35, 49));
+.details{
+    width: 60%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
-
-.SkilContainer img{
-    height: 100px;
-}
-.progressbar{
-    height:12px;
-    width:160px;
-    border-radius: 4px;
-    background:linear-gradient(#0d76c7,#00477e);
-}
-.progressbar div{
-    height:12px;
-    width:40px;
-    border-radius: 4px;
-    background:linear-gradient(#072944,#00477e);
-
-}
-.work{
-    float: left;
-    width:40%;
-    padding: 10px;
-  
-   
-}
-.workDetails{
-    float: left;
-    width: 40%;
-    padding: 10px;
-   
-    
-}
-.wrk1{
-    float: left;
-    width:40%;
-    padding: 10px;
-  
-   
-}
-.wdk1{
-    float: left;
-    width: 40%;
-    padding: 10px;
-   
-    
-}
-.work div{
-    width:100%;
-    height: 400px;
-    background:rgba(201, 201, 207, 0.219);
-}
-.workDetails div{
-    padding: 10px;
-    width:100%;
-  background: rgba(128, 128, 131, 0.493);
+.bar{
     position: relative;
-    right: 80px;
-    top: 40px;
+
+    border: 2px solid #6a787f;
+
+    border-radius: 20px;
+    width: 60%;
+
 }
-.wrk1 div{
-    width:100%;
-    padding: 10px;
-    background:rgba(201, 201, 207, 0.219);
+.bar div{
     position: relative;
-    left: 80px;
-    top: 40px;
-    z-index: 1000;
+    width: 0;
+    height: 5px;
+    border-radius: 10px;
+    background: linear-gradient(rgb(7, 45, 77),rgb(106, 184, 217));
 }
-.wdk1 div{
-   
-    width:100%;
-    height: 400px;
-  background: rgba(128, 128, 131, 0.493);
-    
+.skills:not(:last-child){
+    margin-bottom: 20px;
+}
+.html-bars{
+    animation: html-fill 1s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 100%;
+    }
+}
+
+.css-bars{
+    animation: css-fill 2s forwards;
+}
+@keyframes css-fill{
+    100%{
+        width: 100%;
+    }
+}
+
+.javascript-bars{
+    animation: js-fill 2s forwards;
+}
+@keyframes js-fill {
+    100%{
+        width: 85%;
+    }
+}
+
+.mysql-bars{
+    animation: mysql-fill 2s forwards;
+}
+@keyframes mysql-fill {
+    100%{
+        width: 70%;
+    }
+}
+
+.django-bars{
+    animation: django-fill 2s forwards;
+}
+@keyframes django-fill {
+    100%{
+        width: 90%;
+    }
+}
+
+.python-bars{
+    animation: python 2s forwards;
+}
+@keyframes python {
+    100%{
+        width: 95%;
+    }
+}
+
+.jQuery-bars{
+    animation: jquery-fill 2s forwards;
+}
+@keyframes jquery-fill {
+    100%{
+        width: 68%;
+    }
 }
 
 
-.RightScroll{
-    text-align: center;
-    position: absolute;
-    padding:10px;
-    left: 74%;
-   
-    width:50px;
-    height: 50px;
-    
-}
-.leftScroll{
-    text-align: center;
-    padding:10px;
-    position: absolute;
-     width:50px;
-     height: 50px;
- }
+
+
+
+
+
 
  .fa-solid{
     padding: 10px;
@@ -311,7 +287,56 @@ hr.ProHr{
     opacity: 0.3;
   
 }
+.projectFrame{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    flex-flow: wrap;
+}
 
+.projectFrame > .projectImege{
+    flex: 60%;
+    margin: 5px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+
+.projectFrame > .projectImege > img{
+    object-position: center;
+    width:100%;
+    height: 400px;
+    opacity: 0.6;
+}
+.projectEffect{
+    animation: imgframe;
+    animation-duration: 4s;
+    animation-delay: -2s;
+}
+@keyframes imgframe{
+
+    50%{
+        transform: scale(0);
+        transition: linear transform 5s;
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        transition: linear transform 5s;
+    }
+    
+}
+
+.projectFrame > .project-desc{
+    flex: 30%;
+    margin: 5px;
+    height: 200px;
+    background-color: rgb(3, 29, 51);
+    padding: 10px;
+    font-size: 20px;
+    font-style: oblique;
+}
 
 
 /* content wrapper*/
@@ -343,6 +368,10 @@ hr.ProHr{
 
 
 }
+
+
+
+
 
 
 .Contact{
@@ -498,57 +527,6 @@ hr.footHr{
     .logo{
       width: 80%;
     }
-
-.work{
-    float: left;
-    width:100%;
-    padding: 10px;
-  
-   
-}
-.workDetails{
-    float: left;
-    width: 100%;
-    padding: 10px;
-   
-    
-}
-.wrk1{
-    float: left;
-    width:100%;
-    padding: 10px;
-  
-   
-}
-.wdk1{
-    float: left;
-    width: 100%;
-    padding: 10px;
-   
-    
-}
-.work div{
-    width:100%;
-    height: 400px;
-    background:rgba(201, 201, 207, 0.219);
-}
-.workDetails div{
-    padding: 10px;
-    width:100%;
-  background: rgba(128, 128, 131, 0.493);
-}
-.wrk1 div{
-    width:100%;
-    padding: 10px;
-    background:rgba(201, 201, 207, 0.219);
-}
-.wdk1 div{
-   
-    width:100%;
-    height: 400px;
-  background: rgba(128, 128, 131, 0.493);
-    
-}
     .navBar{
         width:20%;
         padding: 15px;
@@ -695,3 +673,36 @@ hr.footHr{
     }
    
   }
+
+  #button_div button
+  {
+   background-color:none;
+   width:200px;
+   height:50px;
+   font-size:17px;
+   color:white;
+   border:none;
+  }
+
+ #button_div .vertical
+{
+ background-color:#0647473b;
+ transition: all 0.35s ease;
+ border-radius:5px;
+}
+#button_div .vertical:hover
+{
+ border: 1px solid  #00477e;
+ background-color:white;
+ color: #00477e;
+ animation: vertical .50s linear alternate;
+ cursor: pointer;
+}
+@keyframes vertical 
+{
+ 20%{transform: translateY(0);}
+ 40% {transform: translateY(-10px);}
+ 60%{transform: translateY(0px);}
+ 80%{transform: translateY(15px);}
+ 100% {transform: translateY(0);} 
+}

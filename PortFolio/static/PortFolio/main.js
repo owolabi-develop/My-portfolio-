@@ -1,19 +1,10 @@
 
-var i = 1000
-function RightSlide(){
-    var skillElement = document.querySelector(".Skills")
-    skillElement.scrollLeft += i;
-}
-function LeftSlide(){
-    i*2
-    var skillElement = document.querySelector(".Skills")
-    skillElement.scrollLeft -= i;
-}
 
 function NavBar(){
     var navElement = document.querySelector(".navDropDown");
     navElement.classList.toggle("navDropDown1")
 }
+
 window.onscroll = function(){ScrollAnimation()}
 function ScrollAnimation(){
     const viewPorst = document.documentElement.scrollTop;
@@ -30,8 +21,31 @@ function ScrollAnimation(){
             }
         }
     })
+
+var skillcontainer = document.querySelector('.containerSkill')
+if(viewPorst >= skillcontainer.offsetTop){
+    var html = document.querySelector(".html-bar")
+    var css = document.querySelector(".css-bar")
+    var javs = document.querySelector(".javascript-bar")
+    var python = document.querySelector(".python-bar")
+    var django = document.querySelector(".django-bar")
+    var jsq = document.querySelector(".jQuery-bar")
+    var mysql = document.querySelector(".mysql-bar")
+
+    // add features
+    html.classList.add("html-bars")
+    css.classList.add("css-bars")
+    javs.classList.add("javascript-bars")
+    python.classList.add("python-bars")
+    django.classList.add("django-bars")
+    jsq.classList.add("jQuery-bars")
+    mysql.classList.add("mysql-bars")
+
+   
+
     
 
+}
 
           
 }

@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Owolabi Akintan</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
     <link rel="shortcut icon" href="{% static 'images/logo.png' %}" type="image/x-icon" style="height: 100px;">
     <script src="https://kit.fontawesome.com/18de66c05e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{% static 'PortFolio/main.css' %}">
@@ -34,7 +36,8 @@
                 <a href="{% url 'PortFolio:index' %}" class="active"></i>HOME</a>
                 <a href="#service1">&nbsp;&nbsp; <span class="p1">01.</span>SERVICES</a>
                 <a href="#AboutMe1">&nbsp;&nbsp; <span class="p1">02.</span>ABOUT</a>
-                <a href="#projectFrame1">&nbsp;&nbsp; <span class="p1">03.</span>WORK</a>
+                <a href="#SkillBar">&nbsp;&nbsp; <span class="p1">03.</span>SKILL</a>
+                <a href="#projectFrame">&nbsp;&nbsp; <span class="p1">04.</span>WORK</a>
                 <a href="#forms1">&nbsp;&nbsp; <span class="p1">10.</span>CONTACT</a>  
             </div>
 
@@ -69,18 +72,9 @@
                     <h1>I build things for the web.</h1>
                     <p>I’m a web developer specializing in building (and occasionally designing)<br> 
                         exceptional digital experiences. Currently,I’m focused on building accessible, <br>human-centered products</p>
-                    
-                  
-
 
                 </div>
-                
-                <div class="col sideImage ImageEffect">
-                   
-                 
-                   
-                    
-                </div>
+            
             </div>
             <!--END DISPLAY HEADER-->
 
@@ -149,134 +143,114 @@ Here are a few technologies I’ve been working with recently:
                 </div>
                 </div>
             </div>
-
-            <div class="mainrow">
+             <!--start of skillcontainer-->
                  <h3><span class="p1">03.</span> &nbsp;&nbsp;<span class="Abt">Skills ______________________ </span> </h3>
-                <div class="RightScroll"><i class="fa-solid fa-circle-right" onclick="RightSlide()"></i></div>
-                <div class="leftScroll"><i class="fa-solid fa-circle-left" onclick="LeftSlide()"></i></div>
-                
-                <div class="col Skills">
-                    <div class="SkilContainer">
-                    <img src="{% static 'images/html-icon.png' %}">
-            
-                    </div>
-                    <div class="SkilContainer">
-                        <img src="{% static 'images/css-icon.png' %}">
-                        
-                        
+                <div class="containerSkill" id="SkillBar">
+                    <div class="skills">
+                        <div class="details">
+                          <span>Html</span>
+                          <span>100%</span>
                         </div>
+                        <div class="bar">
+                           <div class="html-bar"></div>
+                        </div>
+                      </div>
 
-                        <div class="SkilContainer">
-                            <img src="{% static 'images/python-icon.png' %}">
-                           
-                            </div>
+                      <div class="skills">
+                        <div class="details">
+                          <span>Css</span>
+                          <span>100%</span>
+                        </div>
+                        <div class="bar">
+                           <div class="css-bar"></div>
+                        </div>
+                      </div>
+                     
+                      <div class="skills">
+                        <div class="details">
+                          <span>Javascript</span>
+                          <span>85%</span>
+                        </div>
+                        <div class="bar">
+                           <div class="javascript-bar"></div>
+                        </div>
+                      </div>
+                     
+                      <div class="skills">
+                        <div class="details">
+                          <span>jQuery</span>
+                          <span>68%</span>
+                        </div>
+                        <div class="bar">
+                           <div class="jQuery-bar"></div>
+                        </div>
+                      </div>
 
-                            <div class="SkilContainer">
-                                <img src="{% static 'images/javascript-icon.png' %}">
+
+                      <div class="skills">
+                        <div class="details">
+                          <span>Python</span>
+                          <span>90%</span>
+                        </div>
+                        <div class="bar">
+                           <div class="python-bar"></div>
+                        </div>
+                      </div>
+
+                      <div class="skills">
+                        <div class="details">
+                          <span>Django</span>
+                          <span>90%</span>
+                        </div>
+                        <div class="bar">
+                           <div class="django-bar"></div>
+                        </div>
+                      </div>
+
+                      <div class="skills">
+                        <div class="details">
+                          <span>Mysql</span>
+                          <span>70%</span>
+                        </div>
+                        <div class="bar">
+                           <div class="mysql-bar"></div>
+                        </div>
+                      </div>
+
+
+
+
+
+
+
                     
-                                </div>
-
-                                <div class="SkilContainer">
-                                <img src="{% static 'images/sql-icon.png' %}">
-                               
-                                </div>
-
-                                <div class="SkilContainer">
-                                    <img src="{% static 'images/django-icon.png' %}">
-                                   
-                                    </div>
-
-                                    <div class="SkilContainer">
-                                        <img src="{% static 'images/git-icon.png' %}">
-                                       
-                                        </div>
-                                        <div class="SkilContainer">
-                                            <img src="{% static 'images/github-icon.png' %}">
-                                            
-                                            </div>
-                                            <div class="SkilContainer">
-                                                <img src="{% static 'images/heroku-icon.png' %}">
-                                                
-                                                </div>
                 </div>
-                    
-                
-            </div>
-            <br/>
-            <br/>
-            <br/>
+            
             <!--End of skillcontainer-->
             <!--my work container-->
-            <div class="mainrow" id="projectFrame1">
+            <h3><span class="p1">04.</span> &nbsp;&nbsp;<span class="Abt">My projects ______________________ </span> </h3>
+            <div class="projectFrame" id="projectFrame">
+                <div class="projectImege"> <img src="{% static 'images/developer_blog_screenshort.png' %}"></div>
+                <div class="project-desc">
+                    <p>Full functional blog website with ajax search features build with Python Django, Html,Javascript Css and PostgreSql </p>
+                    <div id="button_div">
+                        <a href="https://developer-news-porter.herokuapp.com/"><button class="vertical">View WebSite</button></a>
+                         </div>
+                </div>
+
+              
+                <div class="project-desc">
+                    <p>Full functional E-commerce website build with Python Django, Html,Javascript Css and PostgreSql with Payment checkout page. intergrated with paystack api</p>
+
+                    <div id="button_div">
+                      <a href="https://owolabi-ecommerce.herokuapp.com/"><button class="vertical">View WebSite</button></a>
+                       </div>
+                </div>
+                <div class="projectImege"> <img src="{% static 'images/fashionstore_screen short.png' %}"></div>
+
                 
-                <div class="col wrk1">
-                    <div>
-                        <p>title</p>
-                        <span>python-icon| Django | Api</span>
-                    </div>
-                     
-                </div>
-                <div class="col wdk1">
-                    <div>
-                       <h1>image</h1>
-                    </div>
-                   
-                </div>
-            </div>
-            <hr class="ProHr">
-            <!--project 2-->
-            <div class="mainrow projectFrame">
-                
-                <div class="col work">
-                    <div>
-                        <h1>image</h1>
-                    </div>
-                     
-                </div>
-                <div class="col workDetails">
-                    <div>
-                        <p>Title</p>
-                    <span>python-icon| Django | Api</span>
-                    </div>
-                   
-                </div>
-            </div>
-            <hr class="ProHr">
-            <!--porject 2-->
-            <div class="mainrow">
-                
-                <div class="col wrk1">
-                    <div>
-                        <p>title</p>
-                        <span>python-icon| Django | Api</span>
-                    </div>
-                     
-                </div>
-                <div class="col wdk1">
-                    <div>
-                       <h1>image</h1>
-                    </div>
-                   
-                </div>
-            </div>
-            
-            <hr class="ProHr">
-            <!--project 3-->
-            <div class="mainrow projectFrame">
-                
-                <div class="col work">
-                    <div>
-                        <h1>image</h1>
-                    </div>
-                     
-                </div>
-                <div class="col workDetails">
-                    <div>
-                        <p>Title</p>
-                    <span>python-icon| Django | Api</span>
-                    </div>
-                   
-                </div>
+               
+             
             </div>
 
             
